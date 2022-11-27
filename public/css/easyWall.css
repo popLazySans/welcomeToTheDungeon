@@ -1,0 +1,85 @@
+.game{
+    width: 540px;
+    height: 540px;
+    position: relative;
+    border: 2px solid black;
+	margin: auto;
+}
+
+.wall {
+    position: absolute;
+	color: transparent;
+	width: 27px;
+	height: 27px;
+	background-color: rgba(0, 255, 0, 0.3);
+}
+
+#start{
+    position: absolute;
+	width: 27px; 
+    height: 27px;
+    top: 486px;
+	left: 189px; 
+    background-color: rgba(247, 0, 255, 0.6);
+}
+
+#finisheasy{
+	position: absolute;
+	width: 27px; 
+    height: 27px;
+	left:  0px; 
+	top: 0px;
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
+#w1{
+	width: 486px; 
+	left:  27px; 
+	top: 0px;
+}
+
+#w2{
+	height:405px; 
+	left: 513px; 
+	top:  0px;
+}
+
+#w3{
+	width:243px; 
+    height: 216px;; 
+	left:270px; 
+	top:27px;
+}
+#w4{
+	width: 216px;; 
+    height: 243px;; 
+	left:0px; 
+	top:54px;
+}
+
+#w5{
+    width: 459px; 
+	height:54px; 
+	left:0px; 
+	top: 297px;
+}
+
+#w6{
+    width: 189px; 
+	height: 162px; 
+	left: 0px; 
+	top: 351px;
+}
+
+#w7{
+	width: 324px;
+    height: 108px;  
+	left: 216px; 
+	top: 405px;
+}
+
+#w8{
+	width: 540px;
+	left:0px; 
+	top: 513px;
+}

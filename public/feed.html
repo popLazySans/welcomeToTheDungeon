@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Maze Game Website</title>
+	<link rel='stylesheet' type='text/css' media='screen' href ='css/feed.css'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script type="text/javascript" src="JS/feed.js"></script>
+	<!---Font-->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">	
+</head>
+
+
+<body>
+    <!---header-->
+    <header>
+        <a href="start.html"> <img class="logo" src="pic/logo.png" alt="logo"></a>
+	    <nav>
+	    	<ul class="nav_links">
+	    		<li><a href ="ranking.html"><button class="menuButton">LEADERBOARD</button></a></li>
+	    		<li><a href ="feed.html"><button class="menuButton">POST</button></a></li>
+	    		<li><a href ="profile.html"><button class="menuButton">PROFILE</button></a></li>
+	    	</ul>
+	    </nav>
+    </header>
+
+    <div class="feed-container"id = "feed-container">
+    </div>
+    <div class="feed-container">
+    <div class="postID">
+        <div class="headerPost">
+            <div id="displayPic2">
+                <!-- <img src= "" alt="">   -->
+            </div>
+            <h3>
+                <div id ="username">Name:</div> <br>
+                <div id = "score">score: </div><br>
+                <div id = "level"></div><br>
+                <div id ="description">description: <textarea name="msg" id="textmsg" value="" placeholder="" rows="1" cols="50"></textarea></div>
+                
+             </h3>
+             <div id="postPic">
+                <form action="/uploadvideo2" method="post" id="formId" enctype="multipart/form-data">
+                    <input type="file" id="fileField" name="avatar" value="fileToUpload" placeholder=""hidden>
+                </form>
+            </div>
+            <div class="commentButton-container">
+            <button id="postButton">Post</button>                
+            </div>
+            
+        </div>
+
+        <!-- <div class="commentButton-container">
+            <button id="likeButton" type="button">Like</button>
+            <button id="commentButton" type="button">comment</button>
+        </div> -->
+
+        <!-- <div class="comment-container">
+            <div id="chatbox">
+                hi <br>
+                hello <br>
+
+            
+            </div>
+            <input name="postMsg" type="text" id="postMsg" size="63" />
+            <button id="postButton2" type="button">post</button>
+        </div> -->
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+ 
+</body>

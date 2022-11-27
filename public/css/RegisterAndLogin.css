@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    text-align: center;
+    background-color: rgba(177, 52, 236, 1);
+    color: white;
+}
+
+h1{
+    margin: 0%;
+    margin-top: 5%;
+    padding: 40px 5px;
+}
+
+div{
+    text-align: center;
+    background-color: rgba(190, 84, 7, 1);
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px 40px 5px 40px;
+}
+
+
+
+#register{
+    padding: 10px 40px 5px 40px;
+    margin: 0%;
+    border-style: hidden;
+    text-align: center;
+}
+
+#email, #username, #password , #confirm{
+    padding: 5px 30px 5px 30px;
+    border-color: white;
+}
+
+#register > p {
+    text-align: left;
+}
+
+#registerbutton{
+    background-color: rgba(136, 59, 15, 1);
+    color: white;
+    border-radius: 10px;
+    border-color: rgba(136, 59, 15, 1);
+    margin-bottom :10px;
+    padding: 5px 20px 5px 20px;
+}
+
+div > h5 {
+    margin: 0%;
+    text-align: right;
+}
+
+#errorMsg{
+    margin: 5px;
+    color: rgb(255, 255, 0);
+}
+
+
+

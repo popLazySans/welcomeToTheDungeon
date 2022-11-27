@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head id="head">
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Maze Game Website</title>
+	<link rel='stylesheet' type='text/css' media='screen' href ='css/game.css'>
+	<!-- <link rel='stylesheet' type='text/css' media='screen' href ='css/easyWall.css'> -->
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<script type="text/javascript" src="JS/gameplay.js"></script>
+	<!---Font-->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">	
+</head>
+
+
+<body>
+    <!---header-->
+    <header>
+		<a href="start.html"> <img class="logo" src="pic/logo.png" alt="logo"></a>
+	    <nav>
+	    	<ul class="nav_links">
+	    		<li><a href ="ranking.html"><button class="menuButton">LEADERBOARD</button></a></li>
+	    		<li><a href ="feed.html"><button class="menuButton">POST</button></a></li>
+	    		<li><a href ="profile.html"><button class="menuButton">PROFILE</button></a></li>
+	    	</ul>
+	    </nav>
+    </header>
+	
+    <div id="gamePlay">
+		
+		<form id="gameScore" action="/getScore" method="post" accept-charset="utf-8">
+		<div class="game" id = "easygame">
+			<div id="start"></div>
+			<div id="finisheasy"></div>
+			<div class="wall" id="w1"></div>
+			<div class="wall" id="w2"></div>
+			<div class="wall" id="w3"></div>
+			<div class="wall" id="w4"></div>
+			<div class="wall" id="w5"></div>
+			<div class="wall" id="w6"></div>
+			<div class="wall" id="w7"></div>
+			<div class="wall" id="w8"></div>
+		</div>
+		<div class="game" id = "normalgame">
+			<div id="start"></div>
+			<div id="finishnormal"></div>        
+			<div class="wall" id="w9"></div>
+        	<div class="wall" id="w10"></div>
+        	<div class="wall" id="w11"></div>
+        	<div class="wall" id="w12"></div>
+        	<div class="wall" id="w13"></div>
+        	<div class="wall" id="w14"></div>
+        	<div class="wall" id="w15"></div>
+        	<div class="wall" id="w16"></div>
+        	<div class="wall" id="w17"></div>
+        	<div class="wall" id="w18"></div>
+        	<div class="wall" id="w19"></div>
+        	<div class="wall" id="w20"></div>
+        	<div class="wall" id="w21"></div>
+        	<div class="wall" id="w22"></div>
+        	<div class="wall" id="w23"></div>
+        	<div class="wall" id="w24"></div>
+        	<div class="wall" id="w25"></div>
+        	<div class="wall" id="w26"></div>
+        	<div class="wall" id="w27"></div>
+        	<div class="wall" id="w28"></div>
+        	<div class="wall" id="w29"></div>
+        	<div class="wall" id="w30"></div>
+        	<div class="wall" id="w31"></div>
+        	<div class="wall" id="w32"></div>
+        	<div class="wall" id="w33"></div>
+        	<div class="wall" id="w34"></div>
+        	<div class="wall" id="w35"></div>
+        	<div class="wall" id="w36"></div>
+        	<div class="wall" id="w37"></div>
+        	<div class="wall" id="w38"></div>
+        	<div class="wall" id="w39"></div>
+        	<div class="wall" id="w40"></div>
+        	<div class="wall" id="w41"></div>
+        	<div class="wall" id="w42"></div>
+        	<div class="wall" id="w43"></div>
+        	<div class="wall" id="w44"></div>
+        	<div class="wall" id="w45"></div>
+        	<div class="wall" id="w46"></div>
+        	<div class="wall" id="w47"></div>
+        	<div class="wall" id="w48"></div>
+        	<div class="wall" id="w49"></div>
+        	<div class="wall" id="w50"></div>
+        	<div class="wall" id="w51"></div>
+        	<div class="wall" id="w52"></div>
+        	<div class="wall" id="w53"></div>
+        	<div class="wall" id="w54"></div>
+		</div>
+		<div class="game" id="hardgame">
+			<div id="start"></div>
+			<div id="finishhard"></div>
+			<div id="finishFake">Fake</div>
+			<div class="wall" id="w55"></div>
+        	<div class="wall" id="w56"></div>
+        	<div class="wall" id="w57"></div>
+        	<div class="wall" id="w58"></div>
+        	<div class="wall" id="w59"></div>
+        	<div class="wall" id="w60"></div>
+        	<div class="wall" id="w61"></div>
+        	<div class="wall" id="w62"></div>
+        	<div class="wall" id="w63"></div>
+        	<div class="wall" id="w64"></div>
+        	<div class="wall" id="w65"></div>
+        	<div class="wall" id="w66"></div>
+        	<div class="wall" id="w67"></div>
+        	<div class="wall" id="w68"></div>
+        	<div class="wall" id="w69"></div>
+        	<div class="wall" id="w70"></div>
+        	<div class="wall" id="w71"></div>
+        	<div class="wall" id="w72"></div>
+        	<div class="wall" id="w73"></div>
+        	<div class="wall" id="w74"></div>
+        	<div class="wall" id="w75"></div>
+        	<div class="wall" id="w76"></div>
+        	<div class="wall" id="w77"></div>
+        	<div class="wall" id="w78"></div>
+        	<div class="wall" id="w79"></div>
+        	<div class="wall" id="w80"></div>
+        	<div class="wall" id="w81"></div>
+        	<div class="wall" id="w82"></div>
+        	<div class="wall" id="w83"></div>
+        	<div class="wall" id="w84"></div>
+        	<div class="wall" id="w85"></div>
+        	<div class="wall" id="w86"></div>
+        	<div class="wall" id="w87"></div>
+        	<div class="wall" id="w88"></div>
+        	<div class="wall" id="w89"></div>
+        	<div class="wall" id="w90"></div>
+        	<div class="wall" id="w91"></div>
+        	<div class="wall" id="w92"></div>
+        	<div class="wall" id="w93"></div>
+        	<div class="wall" id="w94"></div>
+        	<div class="wall" id="w95"></div>
+        	<div class="wall" id="w96"></div>
+        	<div class="wall" id="w97"></div>
+        	<div class="wall" id="w98"></div>
+        	<div class="wall" id="w99"></div>
+        	<div class="wall" id="w100"></div>
+        	<div class="wall" id="w101"></div>
+        	<div class="wall" id="w102"></div>
+		</div>
+		
+		<div>
+			<button id="testbutton" type="button" hidden>Win</button>
+		</div>
+		</form>
+	    <button id="startbutton">Start</button>
+    </div>
+	<div id="winDiv"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+</body>

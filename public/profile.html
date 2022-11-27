@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Maze Game Website</title>
+	<link rel='stylesheet' type='text/css' media='screen' href ='css/profile.css'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script type="text/javascript" src="JS/profile.js"></script>
+	<!---Font-->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">	
+</head>
+
+
+<body>
+    <!---header-->
+    <header>
+        <a href="start.html"> <img class="logo" src="pic/logo.png" alt="logo"></a>
+	    <nav>
+	    	<ul class="nav_links">
+	    		<li><a href ="ranking.html"><button class="menuButton">LEADERBOARD</button></a></li>
+	    		<li><a href ="feed.html"><button class="menuButton">POST</button></a></li>
+	    		<li><a href ="profile.html"><button class="menuButton">PROFILE</button></a></li>
+	    	</ul>
+	    </nav>
+    </header>
+
+
+
+    <div id="buttonID">
+        <button id="changeNameButton" type="button">Change Name</button>
+        <button id="logOutButton" type="button"><a href="/logout"> Logout</a></button>
+        
+    </div>
+    
+    <div id="ProfileID">
+        <div id="browsePic">
+            <div id="displayPic">
+                <img src= "pic/avatar.png" id="profile" alt="">
+            </div>
+            <form action="/profilepic" method="post" id="formId" enctype="multipart/form-data">
+                <input type="file" id="fileField" name="avatar" value="fileToUpload" placeholder=""hidden>
+            </form>
+        </div>
+        <form id="changename" action="/profilename" method="post" accept-charset="utf-8">
+        <h3 id="userDescription">
+            Name : <span id="username"> player Name </span><br>
+            <!-- Player Rank : <span id="ranking">1</span> -->
+        </h3>
+        </form>
+        
+    </div>
+    
+   <!-- <div id="showVideo">
+        <h3>Video Played</h3>
+        <hr>
+        <div id="video-container">  ลบด้านในออกตอนมีวิดีโอด้วย
+            video show here!!  
+            <br><br><br>            
+        </div>
+    </div>-->
+
+
+
+
+
+
+
+
+
+
+
+ 
+</body>
